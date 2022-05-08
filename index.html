@@ -1,128 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Title Page-->
-    <title>Formulaire d'application</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style type="text/css">
+        body, html
+        {
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="css/main.css" rel="stylesheet" media="all">
+        #content
+        {
+            position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+        }
+        </style>
+    <title></title>
 </head>
-
 <body>
-    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
-                <div class="card-body">
-                    <h2 class="title">Formulaire d'application</h2>
-                    <form action="https://formspree.io/f/mwkyaeyz" method="POST">
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Prénom</label>
-                                    <input class="input--style-4" type="text" name="Prénom" required>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Nom de famille</label>
-                                    <input class="input--style-4" type="text" name="Nom" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Date de naissance</label>
-                                    <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="naissance" required>
-                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Genre</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Homme
-                                            <input type="radio" checked="checked" name="genre" value="homme">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Femme
-                                            <input type="radio" name="genre" value="femme">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Autre
-                                            <input type="radio" name="genre" value="autre">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Email</label>
-                            <input class="input--style-4" type="email" name="email" required>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Avez-vous déjà été banni ? Sur quel serveur et pourquoi ?</label>
-                            <input class="input--style-4" type="text" name="banni" required>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Avez-vous une expérience passée ou actuelle en tant que staff dans un
-                                serveur ?</label>
-                            <input class="input--style-4" type="text" name="expérience" required>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Pourquoi devrions-nous vous choisir plutôt que d'autres
-                                candidats?</label>
-                            <input class="input--style-4" type="text" name="choix" required>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Combien de temps pouvez-vous consacrer au serveur par jour et à quel
-                                moment de la journée ?</label>
-                            <input class="input--style-4" type="text" name="temps" required>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Selon vous, quels sont les devoirs d'un modérateur ?</label>
-                            <input class="input--style-4" type="text" name="devoirs" required>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Vous souhaitez ajouter quelque chose ?</label>
-                            <input class="input--style-4" type="text" name="ajout">
-                        </div>
-                        <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Envoyer</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div id="content">
     </div>
-
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
-
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+</body>
 </html>
-<!-- end document-->
